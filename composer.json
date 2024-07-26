@@ -1,0 +1,39 @@
+{
+    "name": "haschamedia/publisher",
+    "description": "Compile data in abstractive code to build application product resources",
+    "type": "library",
+    "keywords": ["haschamedia", "web", "application", "publishing", "laravel"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/haschamedia/publisher/issues",
+        "source": "https://github.com/haschamedia/publisher"
+    },
+    "authors": [
+        {
+            "name": "Fariz Huzairi",
+            "email": "farizhuzairi@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/haschamedia/basecrypt"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "haschamedia/basecrypt": "^1.0.0-alpha"
+    },
+    "autoload": {
+        "psr-4": {
+            "Publisher\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Publisher\\PublisherServiceProvider"
+            ]
+        }
+    }
+}
