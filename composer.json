@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "php": "^8.2",
         "haschamedia/basecrypt": "^1.0.0-alpha"
     },
     "autoload": {
