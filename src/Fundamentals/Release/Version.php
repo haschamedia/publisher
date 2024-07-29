@@ -21,7 +21,7 @@ class Version extends Model
         'vin_tag'
     ];
 
-    protected $connection = DBConnect::BASE->value;
+    protected $connection = DBConnect::RELEASE->value;
     protected $table = 'versions';
     protected $primaryKey = 'id';
     protected $keyType = 'int';

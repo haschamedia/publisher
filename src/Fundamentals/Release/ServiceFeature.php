@@ -6,19 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 use Publisher\Configurations\DBConnect;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Release extends Model
+class ServiceFeature extends Model
 {
     use SoftDeletes;
-    
+
     protected $fillable = [
-        'application_product_id',
-        'code',
-        'released_at',
-        'notes',
+        'service_version_id',
+        'feature_id',
+        'feature_model_id',
+        'service_feature_code',
+        'priority',
+        'type'
     ];
 
     protected $connection = DBConnect::RELEASE->value;
-    protected $table = 'releases';
+    protected $table = 'service_features';
     protected $primaryKey = 'id';
     protected $keyType = 'int';
     public $incrementing = true;
