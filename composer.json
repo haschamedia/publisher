@@ -14,12 +14,6 @@
             "email": "farizhuzairi@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/haschamedia/basecrypt"
-        }
-    ],
     "require": {
         "php": "^8.2",
         "haschamedia/basecrypt": "^1.0.0-alpha"
