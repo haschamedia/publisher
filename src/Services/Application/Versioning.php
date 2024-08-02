@@ -5,6 +5,7 @@ namespace Publisher\Services\Application;
 use Publisher\Traits\ModelableTraits;
 use Publisher\Contracts\Services\Produce;
 use Publisher\Contracts\Application\Publisher;
+use Publisher\Contracts\Application\Resourceable;
 
 class Versioning extends Publisher implements Produce
 {
@@ -16,4 +17,17 @@ class Versioning extends Publisher implements Produce
      * 
      */
     use ModelableTraits;
+
+    /**
+     * implement abstract
+     * 
+     */
+    protected function resourceable(): Resourceable
+    {}
+
+    public static function has(): Modelable
+    {}
+
+    public function hasVersion(): Modelable
+    {}
 }
