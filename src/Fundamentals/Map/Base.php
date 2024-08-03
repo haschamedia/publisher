@@ -14,5 +14,6 @@ class Base implements Modelable
     public function __construct()
     {}
 
-    
+    public function modelable(): Modelable
+    {}
 }

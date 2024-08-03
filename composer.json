@@ -1,5 +1,6 @@
 {
-    "name": "haschamedia/publisher",
+    "name": "haschamedia-dev/publisher",
+    "version": "1.0",
     "description": "Compile data in abstractive code to build application product resources",
     "type": "library",
     "keywords": ["haschamedia", "web", "application", "publishing", "laravel"],

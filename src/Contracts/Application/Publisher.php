@@ -19,6 +19,17 @@ abstract class Publisher
     protected Releases $releases;
 
     /**
+     * constructions
+     * 
+     */
+    public function __construct()
+    {
+        $this->applicationResource = new ApplicationResource;
+        $this->integrationService = new IntegrationService;
+        $this->releases = new Releases;
+    }
+
+    /**
      * new instance
      * 
      */

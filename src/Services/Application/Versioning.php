@@ -9,6 +9,11 @@ use Publisher\Contracts\Application\Resourceable;
 
 class Versioning extends Publisher implements Produce
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     /**
      * use $modelable as object
      * 
@@ -24,6 +29,15 @@ class Versioning extends Publisher implements Produce
      */
     protected function resourceable(): Resourceable
     {}
+
+    /**
+     * check release by appId
+     * 
+     */
+    public function isRelease(string $appId): bool
+    {
+        return $this->releases->checkRelease($appId); 
+    }
 
     public static function has(): Modelable
     {}

@@ -8,6 +8,11 @@ use Publisher\Contracts\Application\Publisher;
 
 class Publishing extends Publisher implements Produce
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+    
     /**
      * use $modelable as object
      * 
